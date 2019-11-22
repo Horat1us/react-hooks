@@ -22,6 +22,7 @@ export const Component = () => {
 
 ## Contents
 - [useOpenState](./src/use-open-state.ts)
+- [useWindowWidth](./src/use-window-width.ts)
 
 ## Contributors
 - [Alexander <Horat1us> Letnikow](https://github.com/Horat1us)
