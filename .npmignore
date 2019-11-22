@@ -4,3 +4,6 @@ tsconfig.types.json
 tslint.json
 rollup.config.js
 src/
+.idea/
+.DS_Store
+README.md

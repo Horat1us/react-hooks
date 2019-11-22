@@ -1,6 +1,6 @@
 {
   "name": "@horat1us/react-hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Hooks Collection",
   "main": "dist/react-hooks.cjs.js",
   "module": "dist/react-hooks.esm.js",
@@ -10,7 +10,8 @@
     "build:types": "tsc --project tsconfig.types.json",
     "build:compile": "rollup -c",
     "build:rm": "rm -rf ./dist",
-    "build": "npm run build:rm && npm run build:types && npm run build:compile"
+    "build": "npm run build:rm && npm run build:types && npm run build:compile",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
