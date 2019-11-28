@@ -25,6 +25,8 @@ export const Component = () => {
 - [useWindowWidth](./src/use-window-width.ts)
 - [useInterval](./src/use-interval.ts)
 - [useTimeout](./src/use-timeout.ts)
+- [useSubmitCallback](./src/use-submit-callback.ts) - handle FormEvent with custom callback
+and `event.preventDefault()` call.
 
 ## Contributors
 - [Alexander <Horat1us> Letnikow](https://github.com/Horat1us)
