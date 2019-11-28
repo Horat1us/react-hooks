@@ -27,6 +27,7 @@ export const Component = () => {
 - [useTimeout](./src/use-timeout.ts)
 - [useSubmitCallback](./src/use-submit-callback.ts) - handle FormEvent with custom callback
 and `event.preventDefault()` call.
+- [useInputState](./src/use-input-state.ts) - controlling input value using state and onChange callback.
 
 ## Contributors
 - [Alexander <Horat1us> Letnikow](https://github.com/Horat1us)
