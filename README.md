@@ -28,6 +28,7 @@ export const Component = () => {
 - [useSubmitCallback](./src/use-submit-callback.ts) - handle FormEvent with custom callback
 and `event.preventDefault()` call.
 - [useInputState](./src/use-input-state.ts) - controlling input value using state and onChange callback.
+- [useScrollEffect](./src/use-scroll-effect.ts) - auto scroll to element bottom on changes
 
 ## Contributors
 - [Alexander <Horat1us> Letnikow](https://github.com/Horat1us)
