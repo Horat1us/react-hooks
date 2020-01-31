@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export function useScrollEffect(element: HTMLElement | undefined) {
+export function useScrollEffect(element: HTMLElement | null | undefined) {
     React.useEffect(() => {
         if (!element) {
             return;
