@@ -4,3 +4,4 @@ export * from "./use-interval";
 export * from "./use-timeout";
 export * from "./use-submit-callback";
 export * from "./use-input-state";
+export * from "./use-scroll-effect";
