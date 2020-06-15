@@ -5,4 +5,5 @@ export * from "./use-timeout";
 export * from "./use-submit-callback";
 export * from "./use-input-state";
 export * from "./use-scroll-effect";
+export * from "./use-document-title-effect";
 export * from "./use-mutation-observer";
