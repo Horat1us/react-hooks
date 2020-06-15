@@ -29,6 +29,7 @@ export const Component = () => {
 and `event.preventDefault()` call.
 - [useInputState](./src/use-input-state.ts) - controlling input value using state and onChange callback.
 - [useScrollEffect](./src/use-scroll-effect.ts) - auto scroll to element bottom on changes
+- [useMutationObserver](./src/use-mutation-observer.ts) - MutationObserver effect hook with HTMLElement state
 
 ## Contributors
 - [Alexander <Horat1us> Letnikow](https://github.com/Horat1us)

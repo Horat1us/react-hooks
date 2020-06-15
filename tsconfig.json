@@ -10,6 +10,7 @@
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
+    "strict": true,
     "jsx": "react",
     "declaration": true,
     "declarationDir": "build",
