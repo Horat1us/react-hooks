@@ -1,11 +1,8 @@
 import * as React from "react";
 
-export type WindowSize = [number, number];
-/** width, height */
-export type WindowSizeState = WindowSize | undefined;
-
-export type WindowSizeReducer = React.ReducerWithoutAction<WindowSizeState>;
-export const WindowSizeReducer: WindowSizeReducer = (prevState) => {
+export type WindowSize = [number, number] | [undefined, undefined];
+export type WindowSizeReducer = React.ReducerWithoutAction<WindowSize>;
+export const WindowSizeReducer = (prevState: WindowSize = [undefined, undefined]): WindowSize => {
     if ("object" !== typeof window) {
         return prevState;
     }
@@ -18,8 +15,8 @@ export const WindowSizeReducer: WindowSizeReducer = (prevState) => {
     return [window.innerWidth, window.innerHeight];
 };
 
-export function useWindowSize(): WindowSizeState {
-    const [size, dispatch] = React.useReducer<WindowSizeReducer, WindowSizeState>(
+export function useWindowSize(): WindowSize {
+    const [size, dispatch] = React.useReducer<WindowSizeReducer, undefined>(
         WindowSizeReducer,
         undefined,
         WindowSizeReducer
