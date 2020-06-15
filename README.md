@@ -23,6 +23,7 @@ export const Component = () => {
 ## Contents
 - [useOpenState](./src/use-open-state.ts)
 - [useWindowWidth](./src/use-window-width.ts)
+- [useWindowSize](./src/use-window-size.ts)
 - [useInterval](./src/use-interval.ts)
 - [useTimeout](./src/use-timeout.ts)
 - [useSubmitCallback](./src/use-submit-callback.ts) - handle FormEvent with custom callback
