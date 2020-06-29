@@ -36,6 +36,8 @@ Can be used as stateless component:
 ```jsx harmony
 <DocumentTitle value="string" />
   ```
+- [usePrint](./src/use-input-state.ts) - prints selected DOM element.
+When use you may use [printable.min.css](./styles/printable.min.css).
 
 ## Contributors
 - [Alexander <Horat1us> Letnikow](https://github.com/Horat1us)

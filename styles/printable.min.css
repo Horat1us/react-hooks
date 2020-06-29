@@ -1,0 +1,1 @@
+@media print{body :not(.printable){display:none}body .printable *{display:block!important}}
