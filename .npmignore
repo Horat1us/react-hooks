@@ -6,4 +6,6 @@ rollup.config.js
 src/
 .idea/
 .DS_Store
-README.md
+.travis.yml
+__tests__/
+jest.config.js

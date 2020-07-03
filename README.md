@@ -1,4 +1,8 @@
 # React Hooks
+[![npm version](https://badge.fury.io/js/%40horat1us%2Freact-hooks.svg)](https://badge.fury.io/js/%40horat1us%2Freact-hooks)
+[![Build Status](https://travis-ci.org/Horat1us/react-hooks.svg?branch=master)](https://travis-ci.org/Horat1us/react-hooks)
+
+
 Collection of React Hooks and Utils
 
 ## Install

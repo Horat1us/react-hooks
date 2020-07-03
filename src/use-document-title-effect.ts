@@ -5,10 +5,3 @@ export function useDocumentTitleEffect(title: string): void {
         document.title = title;
     }, [title]);
 }
-
-export const DocumentTitle: React.FC<{
-    value: string;
-}> = React.memo(({value}) => {
-    useDocumentTitleEffect(value);
-    return null;
-});
