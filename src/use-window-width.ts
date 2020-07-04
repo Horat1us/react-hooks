@@ -1,16 +1,15 @@
 import * as React from "react";
 
 export function useWindowWidth() {
-    const [width, setWidth] = React.useState<number | undefined>(undefined);
+    const [width, handleResize] = React.useReducer<React.ReducerWithoutAction<number | undefined>>(
+        (): number => window.innerWidth,
+        ("object" === typeof window) ? window.innerWidth : undefined
+    );
 
     React.useEffect(() => {
-        const handleResize = () => setWidth(window.innerWidth);
-        handleResize();
         window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, [ setWidth ]);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     return width;
 }
