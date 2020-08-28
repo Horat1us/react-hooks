@@ -35,11 +35,14 @@ and `event.preventDefault()` call.
 - [useInputState](./src/use-input-state.ts) - controlling input value using state and onChange callback.
 - [useScrollEffect](./src/use-scroll-effect.ts) - auto scroll to element bottom on changes
 - [useMutationObserver](./src/use-mutation-observer.ts) - MutationObserver effect hook with HTMLElement state
-- [useDocumentTitleEffect](./src/use-document-title-effect.ts) - auto scroll to element bottom on changes. 
+- [useDocumentTitleEffect](./src/use-document-title-effect.ts) - auto scroll to element bottom on changes.
 Can be used as stateless component:
 ```jsx harmony
 <DocumentTitle value="string" />
   ```
+- [usePageMeta](./src/use-page-meta.ts) - changes or adds meta tag.
+- [usePageInfo](./src/use-page-info.ts) - combines useDocumentTitleEffect and usePageMeta.
+
 - [usePrint](./src/use-input-state.ts) - prints selected DOM element.
 When use you may use [printable.min.css](./styles/printable.min.css).
 
