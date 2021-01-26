@@ -1,6 +1,6 @@
 {
   "name": "@horat1us/react-hooks",
-  "version": "1.12.0",
+  "version": "1.12.1",
   "description": "React Hooks Collection",
   "main": "dist/react-hooks.cjs.js",
   "module": "dist/react-hooks.esm.js",
