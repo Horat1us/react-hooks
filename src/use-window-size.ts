@@ -16,10 +16,9 @@ export const WindowSizeReducer = (prevState: WindowSize = [undefined, undefined]
 };
 
 export function useWindowSize(): WindowSize {
-    const [size, dispatch] = React.useReducer<WindowSizeReducer, undefined>(
+    const [size, dispatch] = React.useReducer<WindowSize, []>(
         WindowSizeReducer,
-        undefined,
-        WindowSizeReducer
+        [undefined, undefined]
     );
 
     React.useEffect(() => {

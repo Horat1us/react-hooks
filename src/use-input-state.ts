@@ -5,10 +5,13 @@ export type InputType = HTMLInputElement | HTMLTextAreaElement | HTMLSelectEleme
 export type InputStateHook<I extends InputType = InputType, S extends React.HTMLProps<I>["value"] = string> =
     (initialState?: S, inputFilter?: InputFilter) => [S, React.Dispatch<React.ChangeEvent<I>>, React.Dispatch<React.SetStateAction<S>>];
 
-export const useInputState: InputStateHook = (initialState = "", inputFilter) => {
+export const useInputState: InputStateHook = <I extends InputType = InputType>(
+    initialState = "",
+    inputFilter?: InputFilter
+) => {
     const [state, setState] = React.useState(initialState);
     const handleChange = React.useCallback(
-        ({ target: { value } }) => setState(inputFilter ? inputFilter(value) : value),
+        ({target: {value}}: React.ChangeEvent<I>) => setState(inputFilter ? inputFilter(value) : value),
         [setState, inputFilter]
     );
     return [state, handleChange, setState];

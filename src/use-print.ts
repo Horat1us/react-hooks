@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import * as React from "react";
 
 export const usePrint = (): [(el: HTMLElement | null) => void, () => void,] => {

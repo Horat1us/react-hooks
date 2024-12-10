@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export function useWindowWidth() {
-    const [width, handleResize] = React.useReducer<React.ReducerWithoutAction<number | undefined>>(
+    const [width, handleResize] = React.useReducer<number | undefined, []>(
         (): number => window.innerWidth,
         ("object" === typeof window) ? window.innerWidth : undefined
     );
